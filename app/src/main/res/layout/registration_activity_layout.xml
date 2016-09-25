@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:id="@+id/userName"
+        android:gravity="center"
+        android:hint="Username" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/userName"
+        android:layout_alignStart="@+id/userName"
+        android:layout_marginTop="11dp"
+        android:id="@+id/userEmail"
+        android:hint="Email"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="66dp"
+        android:id="@+id/userPassword"
+        android:hint="Password"
+        android:layout_below="@+id/userEmail"
+        android:gravity="center"
+        android:layout_alignStart="@+id/userEmail" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_below="@+id/userEmail"
+        android:layout_alignStart="@+id/userPassword"
+        android:layout_marginTop="11dp"
+        android:id="@+id/userPhone"
+        android:gravity="center"
+        android:hint="PhoneNumber" />
+
+    <Button
+        android:text="REGISTER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/regidsterButton"
+        android:layout_below="@+id/clearButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="9dp" />
+
+    <Button
+        android:text="Clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/clearButton"
+        android:gravity="center"
+        android:layout_below="@+id/userPassword"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
